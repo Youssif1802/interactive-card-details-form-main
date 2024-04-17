@@ -333,7 +333,7 @@ h4 {
         font-size: 18px;
     }
 
-    .front_card,
+    /* .front_card,
     .back_card {
         width: 30vw;
         height: 40vh;
@@ -348,7 +348,7 @@ h4 {
     .back_card {
         top: 53vh;
         left: 15vw;
-    }
+    } */
 
 }
 
