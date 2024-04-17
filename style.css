@@ -14,20 +14,17 @@ body {
 .container {
     display: flex;
     width: 100vw;
-    /* min-height: 100vh; */
-    /* padding-right: 1rem; */
     margin: 0;
 }
 
 .right {
-    /* width: 30%; */
     background: url('images/bg-main-desktop.png') no-repeat center;
     background-size: cover;
 }
 
 .front_card,
 .back_card {
-    position: fixed;
+    position: absolute;
     z-index: 999;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -36,12 +33,13 @@ body {
 .front_card {
     background: url('images/bg-card-front.png') no-repeat center;
     background-size: cover;
-    /* top: 15vh;
-    left: 10vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
 }
 
 .front_card_number {
-    position: relative;
     width: 100%;
     text-align: center;
     top: 45%;
@@ -51,6 +49,7 @@ body {
     font-weight: 100;
     background-color: transparent;
     border: none;
+    margin-bottom: 2rem;
 }
 
 .show::placeholder {
@@ -58,9 +57,6 @@ body {
 }
 
 .front_card_name {
-    position: relative;
-    top: 67%;
-    left: 6.5%;
     color: white;
     font-size: 0.7rem;
     letter-spacing: 3px;
@@ -68,12 +64,13 @@ body {
     background-color: transparent;
     border: none;
 }
-
+.name_EXp{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
 .EXP_date {
     display: flex;
-    position: relative;
-    top: 56%;
-    left: 75%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -258,13 +255,13 @@ h4 {
 
     .front_card {
         z-index: 1000;
-        top: 17.3vh;
+        top: 15vh;
         left: 2vw;
     }
 
     .back_card {
         right: 2vw;
-        top: 3vh;
+        top: 1vh;
     }
 
     .left {
@@ -272,7 +269,7 @@ h4 {
     }
 
     .leftcontent {
-        margin-top: 7rem;
+        margin-top: 6rem;
     }
 
     .leftcontent_complete {
@@ -306,12 +303,12 @@ h4 {
     .front_card,
     .back_card {
         width: 41vw;
-        height: 37vh;
+        height: 40vh;
     }
 
     .front_card {
         left: 1.5vw;
-        top: 12vh
+        top: 10vh
     }
 
     .back_card {
@@ -333,7 +330,7 @@ h4 {
         font-size: 18px;
     }
 
-    /* .front_card,
+    .front_card,
     .back_card {
         width: 30vw;
         height: 40vh;
@@ -348,7 +345,7 @@ h4 {
     .back_card {
         top: 53vh;
         left: 15vw;
-    } */
+    }
 
 }
 
