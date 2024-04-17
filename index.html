@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@500&display=swap"
+    rel="stylesheet">
+  <title>interactive card details</title>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="right"></div>
+    <div class="front_card">
+      <input class="front_card_number show" id="front_card_NU" type="text" placeholder="0000 0000 0000 0000" disabled>
+      <input type="text" class="front_card_name show" id="front_card_NM" placeholder="Jane Appleseed" disabled>
+      <div class="EXP_date">
+        <input type="text" id="EXP_month" class="front_card_exp month show" placeholder="00" disabled>
+        <span class="slash">/</span>
+        <input type="text" id="EXP_year" class="front_card_exp year show" placeholder="00" disabled>
+      </div>
+    </div>
+    <div class="back_card">
+      <input id="CVC_show" class="CVC show" type="text" placeholder="000" disabled>
+    </div>
+    <div class="left">
+      <form id="myform">
+        <div class="leftcontent">
+          <span class="upper">cardholder name</span>
+          <input id="info_Input_NM" class="info Input_text" type="text" placeholder="e.g Jane Appleseed" maxlength="15">
+          <span id="error_1" class="error">Can't be blank</span>
+          <span class="upper">card number</span>
+          <input class="info Input_text" id="card_number" type="text" placeholder="e.g 1234 5678 9123 0000"
+            maxlength="19">
+          <span id="error_2" class="error">Can't be blank</span>
+          <div class="data_cvc">
+            <div class="data">
+              <span class="upper">exp. date (mm/yy)</span>
+              <input id="month" class="text_data Input_text" style="margin-right: 7%;" type="text" placeholder="MM"
+                maxlength="2">
+              <input id="year" class="text_data Input_text" type="text" placeholder="yy" maxlength="2">
+              <span id="error_3" class="error">Can't be blank</span>
+            </div>
+            <div class="cvc">
+              <span class="upper">cvc</span>
+              <input id="CVC_input" class="cvc_info Input_text" type="text" placeholder="e.g 123" maxlength="3">
+              <span id="error_4" class="error">Can't be blank</span>
+            </div>
+          </div>
+          <input class="button Input_text" type="submit" value="Conform">
+        </div>
+      </form>
+      <form id="complete_form" class="hidden">
+        <div class="leftcontent_complete">
+          <img src="images/icon-complete.svg" alt="">
+          <h2>thank you !</h2>
+          <h4>We've added your card details</h4>
+            <input type="submit" class="button" value="continue">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
